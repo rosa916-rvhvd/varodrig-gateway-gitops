@@ -1,0 +1,15 @@
+app:
+  name: varodrig-poi-gateway-app
+  namespace: varodrig
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/varodrig-gateway
+  org: rosa916-rvhvd
+  name: varodrig-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: varodrig/poi-gateway-app
+  tag: latest
